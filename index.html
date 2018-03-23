@@ -12,24 +12,29 @@
 </head>
 <body>
   <nav class="purple">
-      <div class="nav-wrapper container">
-          <svg class="svglogo" xmlns="http://www.w3.org/2000/svg" height="74" viewBox="0 0 437 528.91"><defs><style>.a{fill:none;stroke-width:5px;}.a,.b{stroke:#ffffff;stroke-miterlimit:10;}.b{font-size:48px;fill: #ffffff;;stroke-width:0.25px;font-family:SegoeUI-Bold, Segoe UI;font-weight:700;}.c{letter-spacing:0em;}</style></defs><title>Логотип</title><circle class="a" cx="218.5" cy="218.5" r="216"/><line class="a" x1="145.11" y1="147.5" x2="145.11" y2="292.3"/><line class="a" x1="288.36" y1="149.33" x2="216.69" y2="221.61"/><line class="a" x1="289.11" y1="292.3" x2="289.11" y2="147.5"/><line class="a" x1="142.78" y1="290.17" x2="218.5" y2="290.17"/></svg>
+      <div class="nav-wrapper container ">
+          <svg class="svglogo hide-on-med-and-down" xmlns="http://www.w3.org/2000/svg" height="74" viewBox="0 0 437 528.91"><defs><style>.a{fill:none;stroke-width:5px;}.a,.b{stroke:#ffffff;stroke-miterlimit:10;}.b{font-size:48px;fill: #ffffff;;stroke-width:0.25px;font-family:SegoeUI-Bold, Segoe UI;font-weight:700;}.c{letter-spacing:0em;}</style></defs><title>Логотип</title><circle class="a" cx="218.5" cy="218.5" r="216"/><line class="a" x1="145.11" y1="147.5" x2="145.11" y2="292.3"/><line class="a" x1="288.36" y1="149.33" x2="216.69" y2="221.61"/><line class="a" x1="289.11" y1="292.3" x2="289.11" y2="147.5"/><line class="a" x1="142.78" y1="290.17" x2="218.5" y2="290.17"/></svg>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <a href="#" class="brand-logo">Lis1us Production</a> 
     <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="#about">О мне</a></li>
         <li><a href="#portfolio">Портфолио</a></li>
         <li><a href="#contacts">Контакты</a></li>
       </ul> 
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#about">О мне</a></li>
+        <li><a href="#portfolio">Портфолио</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
     </div>
   </nav>
   <main>
       
-    <div class="section no-pad-bot" id="index-banner">
+    <div class="section no-pad-bot scrollspy" id="about">
       <div class="container">
-        <br><br>
         <h1 class="header center orange-text">Добро пожаловать!</h1>
         <div class="row center">
-          <h5 class="header col s12 light">Здравствуйте, меня зовут Дмитрий Суханов. Я занимаюсь программированием с 2013 года.</h5>
+          <h5 class="header col s12 light">Здравствуйте, меня зовут Дмитрий Суханов. Я увлекаюсь программированием с 2013 года.</h5>
           <h5 class="header col s12 light">За это время я успел выучить PHP, Python и C#. В моём портфолио не так уж много проектов, но это только начало.</h4>
           <h5 class="header col s12 light">Мои знания позволяют мне делать красивые и эффективные сайты, ботов и приложения для Windows(UWP и WPF).</h3>
         </div>
@@ -40,41 +45,21 @@
     </div>
 
 
-    <div class="container">
-      <div class="section">
+    <div class="section no-pad-bot scrollspy" id="portfolio">
+        <div class="container">
+          <h1 class="header center orange-text">Портфолио</h1>
+          <div class="row center">
 
-        <!--   Icon Section   -->
-        <div class="row">
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-              <h5 class="center">Speeds up development</h5>
-
-              <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-            </div>
           </div>
-
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-              <h5 class="center">User Experience Focused</h5>
-
-              <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-              <h5 class="center">Easy to work with</h5>
-
-              <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+        </div>
+      </div>
+      <div class="section no-pad-bot scrollspy" id="contacts">
+          <div class="container">
+            <h1 class="header center orange-text">Контакты</h1>
+            <div class="row center">
             </div>
           </div>
         </div>
-
-      </div>
-      <br><br>
     </div>
   </main>
   <footer class="page-footer purple">
@@ -117,5 +102,13 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="js/materialize.min.js"></script>
   <script src="js/init.js"></script>
+  
+  <script type="text/javascript" src="//vk.com/js/api/openapi.js?152"></script>
+
+  <!-- VK Widget -->
+  <div id="vk_community_messages"></div>
+  <script type="text/javascript">
+  VK.Widgets.CommunityMessages("vk_community_messages", 145945191, {expandTimeout: "120000",tooltipButtonText: "Есть вопрос?"});
+  </script>
   </body>
 </html>
