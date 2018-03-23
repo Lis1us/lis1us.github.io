@@ -12,3 +12,12 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+.logo {
+  padding-top: 18px;
+}
+nav .brand-logo{
+  margin-left: 10px;
+}
+.svglogo{
+  margin-top: 1px;
+}
