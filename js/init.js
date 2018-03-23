@@ -1,7 +1,7 @@
 (function($){
   $(function(){
 
-    //$('.parallax').parallax();
+    $('.parallax').parallax();
     $('.scrollspy').scrollSpy();
     $('.sidenav').sidenav();
 
