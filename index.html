@@ -19,6 +19,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  
 </head>
 
 <body>
@@ -94,11 +95,7 @@
         <line class="a" x1="289.11" y1="292.3" x2="289.11" y2="147.5" />
         <line class="a" x1="142.78" y1="290.17" x2="218.5" y2="290.17" />
       </svg>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-        <i class="material-icons">menu</i>
-      </a>
-      <a href="#" class="brand-logo hide-on-small-only">Lis1us Production</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <ul class="sidenav" id="slide-out">
         <li class="waves-effect">
           <a href="#about"><i class="material-icons left">info_outline</i>О мне</a>
         </li>
@@ -109,7 +106,11 @@
           <a href="#contacts"><i class="material-icons left">contacts</i>Контакты</a>
         </li>
       </ul>
-      <ul class="sidenav" id="mobile-demo">
+      <a href="#" data-target="slide-out" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+      <a href="#" class="brand-logo hide-on-small-only">Lis1us Production</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li class="waves-effect">
           <a href="#about"><i class="material-icons left">info_outline</i>О мне</a>
         </li>
@@ -276,7 +277,6 @@
   </footer>
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="js/materialize.min.js"></script>
   <script src="js/init.js"></script>
   <script type="text/javascript" src="//vk.com/js/api/openapi.js?152"></script>

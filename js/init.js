@@ -1,10 +1,31 @@
-(function($){
-  $(function(){
+SideNavInit();
+ParallaxInit();
+ScrollSpyInit();
+CollapsibleInit();
 
-    $('.parallax').parallax();
-    $('.scrollspy').scrollSpy();
-    $('.sidenav').sidenav();
-    $('.collapsible').collapsible();
+function CollapsibleInit() {
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
+  });
+}
 
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+function ScrollSpyInit() {
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.scrollspy');
+    var instances = M.ScrollSpy.init(elems);
+  });
+}
+
+function ParallaxInit() {
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems);
+  });
+}
+function SideNavInit() {
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });
+}
