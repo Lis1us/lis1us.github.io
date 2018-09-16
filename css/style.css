@@ -15,8 +15,8 @@ nav .brand-logo {
 }
 nav {
   box-shadow: none;
-  position: absolute;
   -moz-box-shadow: none;
+  position: absolute;
   background: rgba(0, 0, 0, 0.2);
 }
 
