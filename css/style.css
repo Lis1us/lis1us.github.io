@@ -13,11 +13,21 @@
 nav .brand-logo {
   margin-left: 10px;
 }
+nav {
+  box-shadow: none;
+  position: absolute;
+  -moz-box-shadow: none;
+  background: rgba(0, 0, 0, 0.2);
+}
 
 .svglogo {
   margin-top: 1.5px;
 }
 
+#about{
+  margin-top: 18px;
+}
+  
 .page-footer i.left {
   margin-top: 2px;
 }
